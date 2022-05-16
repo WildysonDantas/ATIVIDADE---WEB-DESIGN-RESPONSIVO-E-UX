@@ -20,6 +20,15 @@ footer a:hover{
     color: rgb(19, 158, 212);
 }
 
+img{
+    max-width: 100%;
+}
+
+picture{
+    max-width: 100%;
+}
+
+
 /* Add a black background color to the top navigation */
 .topnav {
     background-color: #333;
@@ -138,6 +147,12 @@ section h1 {
         
     }
 
+      .wrapper{
+        
+        grid-template-columns: 1fr !important;
+  
+    }
+
     .content{
         width: 100%;
         max-width: 100%;
@@ -149,6 +164,20 @@ section h1 {
     }
 }
 
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  background-color: transparent;
+  color: #444;
+  margin-bottom: 5%
+}
+
+.box {
+  padding: 4%;
+   background-color: white;
+}
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
 
@@ -156,6 +185,12 @@ section h1 {
         max-width: 100%;
         margin-bottom: 2%;
         
+    }
+
+    .wrapper{
+        
+        grid-template-columns: 1fr !important;
+  
     }
 
     .content{
@@ -180,6 +215,12 @@ section h1 {
         margin-bottom: 2%;   
     }
 
+    .wrapper{
+        
+        grid-template-columns: 1fr 1fr !important;
+  
+    }
+
     .content{
         width: 100%;
         max-width: 100%;
@@ -201,6 +242,12 @@ section h1 {
         
     }
 
+    .wrapper{
+        
+        grid-template-columns: 1fr 1fr 1fr !important;
+  
+    }
+
     .content{
         width: 100%;
         max-width: 78%;
@@ -218,6 +265,13 @@ section h1 {
         max-width: 33%;
         margin-bottom: 2%;   
     }
+
+    .wrapper{
+        
+        grid-template-columns: 1fr 1fr 1fr !important;
+  
+    }
+    
 
     .content{
         width: 100%;
